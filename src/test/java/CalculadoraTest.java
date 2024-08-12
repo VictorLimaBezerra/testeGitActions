@@ -34,7 +34,6 @@ public class CalculadoraTest {
         Calculadora calculadora = new Calculadora();
         int divisao = calculadora.divisao(20,5);
         System.out.println(divisao);
-        System.out.println("teste de gitActions");
         Assertions.assertEquals(4,divisao);
     }
 
