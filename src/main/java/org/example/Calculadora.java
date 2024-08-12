@@ -14,7 +14,5 @@ public class Calculadora {
         return z % 2 == 0;
     }
 
-    public int add(int z, int j) {
-        return z + j;
-    }
+
 }
