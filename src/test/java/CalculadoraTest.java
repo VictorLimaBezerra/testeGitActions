@@ -35,8 +35,6 @@ public class CalculadoraTest {
         int divisao = calculadora.divisao(20,5);
         System.out.println(divisao);
         Assertions.assertEquals(4,divisao);
-
-
     }
 
     @Test
