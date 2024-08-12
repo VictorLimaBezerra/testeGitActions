@@ -6,8 +6,6 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Maven Build and Test
-
 on:
   push:
     branches: [ "main" ]
@@ -27,17 +25,5 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-
     - name: Build with Maven
-      run: mvn clean install
-
-    - name: Run Tests with Maven
-      run: mvn test
-
-    - name: Publish Test Results
-      if: always()
-      uses: actions/upload-artifact@v3
-      with:
-        name: test-results
-        path: target/surefire-reports/
-
+      run: mvn clean install test
