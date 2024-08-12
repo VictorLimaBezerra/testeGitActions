@@ -13,4 +13,8 @@ public class Calculadora {
     public boolean verificaSeEPar(int z){
         return z % 2 == 0;
     }
+
+    public int add(int z, int j) {
+        return z + j;
+    }
 }
