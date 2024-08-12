@@ -22,6 +22,22 @@ public class CalculadoraTest {
     }
 
     @Test
+    public void multiplicaDoisNumeros(){
+        Calculadora calculadora = new Calculadora();
+        int multiplica = calculadora.multiplicacao(5,20);
+        System.out.println(multiplica);
+        Assertions.assertEquals(100,multiplica);
+    }
+
+    @Test
+    public void divideDoisNumeros(){
+        Calculadora calculadora = new Calculadora();
+        int divisao = calculadora.divisao(20,5);
+        System.out.println(divisao);
+        Assertions.assertEquals(4,divisao);
+    }
+
+    @Test
     public void verificaPar(){
         Calculadora calculadora = new Calculadora();
         boolean verifica = calculadora.verificaSeEPar(10);
